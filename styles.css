@@ -7,14 +7,19 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0px 25px;
     border-bottom: 1px solid var(--very-light-pink);
-    background-color: rgb(52, 49, 95);
+    background-color: rgb(46, 38, 148);
     font-family: sans-serif;
   }
 
 .logo {
     width: 130px;
+}
+
+.navbar-left img {
+    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .navbar-left ul {
@@ -39,3 +44,48 @@ nav {
     border-radius: 18px;
     
 }
+
+aside {
+    background-color: rgba(8, 40, 110, 0.966)
+    
+}
+
+#aside-main {
+    padding: 120px 120px;
+}
+
+.p-main {
+    font-size: 45px;
+    color: aliceblue;
+}
+
+.text-secondary {  
+    padding: 15px 0px;
+}
+
+.p-secondary {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.aside-buttom {
+    padding: 16px 70px;
+    position: absolute;
+}
+
+.p-buttom {
+    background-color: rgb(240, 54, 116);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 18px;
+}
+
+.img figure img {
+    width: 300x;
+    height: 300px;
+    position: relative;
+    left: 650px;
+    bottom: 270px;
+}
+
+
