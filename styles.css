@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+    background-color: rgb(52, 49, 95);
+    font-family: sans-serif;
+  }
+
+.logo {
+    width: 130px;
+}
+
+.navbar-left ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+    height: 140px;
+}
+
+.navbar-left ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.workWithUs {
+    background-color: rgb(240, 54, 116);
+    padding: 10px;
+    border-radius: 18px;
+    
+}
