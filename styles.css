@@ -7,25 +7,32 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 0px 25px;
+    padding: 0px 20px;
     border-bottom: 1px solid var(--very-light-pink);
-    background-color: rgb(46, 38, 148);
+    background: linear-gradient(to right, rgba(71, 71, 187, 0.7), rgb(6, 16, 109));
     font-family: sans-serif;
   }
 
+.inactive {
+    display: none;
+  }
+.menu {
+    display: none;
+  }
+
 .logo {
+    display: flex;
     width: 130px;
 }
 
-.navbar-left img {
-    margin-left: 15px;
-    margin-top: 5px;
+.navbar-left-img {
+    padding-left: 30px;
+    padding-top: 5px;
 }
 
 .navbar-left ul {
+    padding-left: 250px;
     list-style: none;
-    padding: 0;
-    margin-right: 70px;
     display: flex;
     align-items: center;
     height: 140px;
@@ -45,22 +52,27 @@ nav {
     
 }
 
-aside {
-    background-color: rgba(8, 40, 110, 0.966)
-    
+body {
+    background: linear-gradient(to right, rgb(0, 0, 240, 0.6) , rgb(6, 16, 109));
 }
 
-#aside-main {
-    padding: 120px 120px;
+
+.aside-main {
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-around;
 }
+
 
 .p-main {
+    margin: 10px;
     font-size: 45px;
     color: aliceblue;
 }
 
 .text-secondary {  
-    padding: 15px 0px;
+    margin: 10px;
+    padding-top: 10px;
 }
 
 .p-secondary {
@@ -69,11 +81,12 @@ aside {
 }
 
 .aside-buttom {
-    padding: 16px 70px;
-    position: absolute;
+    padding-top: 10px;
+    margin: 30px;
 }
 
 .p-buttom {
+    position: absolute;
     background-color: rgb(240, 54, 116);
     padding: 10px 30px;
     color: white;
@@ -81,11 +94,95 @@ aside {
 }
 
 .img figure img {
-    width: 300x;
+   
     height: 300px;
-    position: relative;
-    left: 650px;
-    bottom: 270px;
+}
+
+footer {
+    padding: 20px 70px 0px 70px
+}
+
+.footer-div img {
+    width: 40px;
+    height: 30px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
+.footer-div p {
+    color: aliceblue;
+}
+
+.parrafo-footer {
+    font-size: 35px;
+}
+
+#parrafo-footer2 {
+    font-size: 35px;
+}
+
+.mobile-menu {
+    background-color: rgb(48, 0, 180);
+    position: absolute;
+    top: 133px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 0 0 15px;
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+
+.mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid blanchedalmond
+  }
+
+
+
+@media (max-width: 480px) {
+    .menu {
+        display: block;
+      }
+    .navbar-left-img{
+        padding-right: 130px;
+    } 
+
+    .navbar-left {
+        display: none;
+    }
+    .aside-main {
+        flex-direction: column;
+        display: block;
+        padding: 0;
+    }
+    .footer-div {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) {
+    .mobile-menu {
+      display: none;
+    }
+  }
